@@ -7,11 +7,18 @@
 </head>
 <body>
 
-Password:
+<p>Password</p>
 
- <form action="/action_page.php">
-  <input type="text" id="password" name="password"><br><br>
-</form> 
+<p id="demo" onclick="myFunction()">Click me.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Correct, the next code is: 234432";
+}
+</script>
+
+<input type="text" id="password" name="password"><br><br>
+
 
 </body>
 </html>
