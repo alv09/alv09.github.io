@@ -17,10 +17,13 @@
 
     <script>
         function myFunction() {
-            var str1 = document.getElementById("userInput").value;
-            var str2 = "cd";
-            var n = str1.localeCompare(str2);
-            document.getElementById("demo").innerHTML = n;
+            var s1 = document.getElementById("userInput").value;
+            var s2 = "cd";
+            if(s1.trim() === s2.trim())
+            {
+                document.getElementById("demo").innerHTML = "234ferw";
+            }
+            
 }   </script>
 
 </body>
