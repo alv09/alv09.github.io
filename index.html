@@ -7,18 +7,21 @@
 </head>
 <body>
 
-<p>Password</p>
+    <p>Password:</p>
 
-<p id="demo" onclick="myFunction()">Click me.</p>
+    <input type="text" id="userInput"> 
 
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Correct, the next code is: 234432";
-}
-</script>
+    <button onclick="myFunction()">Try it</button>
 
-<input type="text" id="password" name="password"><br><br>
+    <p id="demo"></p>
 
+    <script>
+        function myFunction() {
+            var str1 = document.getElementById("userInput").value;
+            var str2 = "cd";
+            var n = str1.localeCompare(str2);
+            document.getElementById("demo").innerHTML = n;
+}   </script>
 
 </body>
 </html>
