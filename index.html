@@ -7,28 +7,29 @@
 </head>
 <body>
     
+    
     <div class="console">
-  <header>
-    <p>anon@user</p>
-  </header>
-  <div class="consolebody">
-    <p>> por favor, introduzca el comando</p>
-    <p>> <input type="text" id="userInput"> <button onclick="myFunction()">Try it</button> </p>
-    <p id="demo"></p>
-  </div>
-</div>
-
+        <header>
+            <p>anon@user</p>
+        </header>
+        <div class="consolebody">
+            <p>> por favor, introduzca el comando</p>
+            <p>> <input type="text" id="userInput" oninput="myFunction()"> </p>
+            <p id="demo"></p>
+        </div>
+    </div>
 
     <script>
-        function myFunction() {
+        function myFunction() 
+        {
             var s1 = document.getElementById("userInput").value;
             var s2 = "cd";
             if(s1.trim() === s2.trim())
             {
                 document.getElementById("demo").innerHTML = "> 234ferw";
             }
-            
-}   </script>
+        }  
+    </script>
 
 </body>
 </html>
