@@ -30,8 +30,7 @@ body {
   border-bottom-right-radius: 15px;
   box-sizing: border-box;
   padding: 20px;
-  height: calc(100% - 40px);
-  overflow: scroll;
+  height: calc(100% - 40px); 
   background-color: #000;
   color: #63de00;
 }
@@ -41,7 +40,13 @@ body {
 }
 
 input[type=text] {
+  font-family: 'Fira Mono';
   border: none;
   color: #63de00;
-  background-color: #555;
+  background-color: #000;
+}
+
+@font-face {
+  font-family: Fira Mono;
+  src: url(FiraMono-Medium.ttf);
 }
